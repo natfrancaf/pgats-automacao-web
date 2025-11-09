@@ -32,6 +32,12 @@ describe('Automation exercise', () => {
         cy.get('a[href="/login"]').click()
 
     })
+
+    it('Exemplos de Logs', () => {
+        cy.log('PGATS AUTOMACAO WEB CY LOG')
+
+        console.log(`PGATS AUTOMACAO WEB CONSOLE LOG`)
+    })
     it.only('Cadastrar um usuário', () => {
         const timestamp = new Date().getTime() //só pra gerar um valor pra incluir no email pq o site nao aceita emails repetidos
 
