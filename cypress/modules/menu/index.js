@@ -1,0 +1,20 @@
+/**
+export function navegarParaLogin(){
+    cy.get('a[href="/login"]').click()
+}
+*/
+
+//usar classe fica mais legível
+
+class Menu {
+  navegarParaLogin() {
+    cy.get('a[href="/login"]').click()
+
+}
+  efetuarLogout(){
+     cy.get('a[href="/logout"]').should('be.visible').click()
+  }
+
+}
+
+export default new Menu()
