@@ -28,6 +28,12 @@ class Cadastro{
 
     }
 
+    deletarConta(){
+        cy.get('a[href="/delete_account"]').should('be.visible').click()
+        cy.contains('b', 'Account Deleted!')
+
+        cy.get('[data-qa="continue-button"]').should('be.visible').click()
+    }
 }
 
 
