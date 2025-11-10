@@ -12,7 +12,7 @@ import produtos from '../modules/produtos'
 import pagamento from '../modules/pagamento'
 
 
-describe('Automation exercise', () => {
+describe('Trabalho Final', () => {
     beforeEach(() => {
        
         cy.visit('https://automationexercise.com/')

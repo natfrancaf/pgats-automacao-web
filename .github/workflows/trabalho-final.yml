@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Executando os testes
-        run: npx cypress run 
+        run: npx cypress run --spec cypress/e2e/trabalho-final.cy.js
 
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled()}}
